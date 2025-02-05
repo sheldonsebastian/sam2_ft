@@ -26,15 +26,13 @@ def overlay_masks(images_dir, masks_dir, output_dir):
 
 
 # %%
-video_files = [
-    "video_0001",
-    "video_0002",
-    "video_0003",
-    "video_0004",
-]
+ROOT_DIR = rf"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset"
+video_files = os.listdir(os.path.join(ROOT_DIR, "images"))
 
+# %%
 for video_file in video_files:
 
+    print(video_file)
     images_dir = rf"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset\images\{video_file}"
     masks_dir = rf"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset\annotations\{video_file}"
     output_dir = rf"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\validate\{video_file}"
