@@ -14,8 +14,8 @@ scratch:
 dataset:
   # PATHS to Dataset
   # TODO update Paths
-  img_folder: C:/Users/sheld/OneDrive/Workspaces/sam2_ft/mini_dataset/train/images # PATH to MOSE JPEGImages folder
-  gt_folder: C:/Users/sheld/OneDrive/Workspaces/sam2_ft/mini_dataset/train/annotations # PATH to MOSE Annotations folder
+  img_folder: /home/kasm-user/sam2_ft/mini_dataset/train/images # PATH to MOSE JPEGImages folder
+  gt_folder: /home/kasm-user/sam2_ft/mini_dataset/train/annotations # PATH to MOSE Annotations folder
   multiplier: 2
 
 # Video transforms
@@ -314,7 +314,7 @@ trainer:
 
       state_dict:
         _target_: training.utils.checkpoint_utils.load_checkpoint_and_apply_kernels
-        checkpoint_path: C:/Users/sheld/OneDrive/Workspaces/sam2_ft/checkpoints/sam2.1_hiera_tiny.pt # TODO update path
+        checkpoint_path: /home/kasm-user/sam2_ft/sam2_ft/checkpoints/sam2.1_hiera_tiny.pt # TODO update path
         ckpt_state_dict_keys: ["model"]
 
 launcher:
