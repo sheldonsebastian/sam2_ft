@@ -93,7 +93,7 @@ for i, video_file in enumerate(video_files, start=1):
             r"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\raw_mini-dataset", video_file
         ),
         os.path.join(
-            r"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset",
+            r"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset_png",
             "images",
             f"video_{i:04d}",
         ),
@@ -119,7 +119,7 @@ for i, video_mask_json_path in enumerate(video_mask_json_files, start=1):
         data = json.load(f)
 
     output_folder = os.path.join(
-        r"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset",
+        r"C:\Users\sheld\OneDrive\Workspaces\sam2_ft\prepped_mini_dataset_png",
         "annotations",
         f"video_{i:04d}",
     )

@@ -19,7 +19,7 @@ from sam2.modeling.sam2_utils import (
 
 from sam2.utils.misc import concat_points
 
-from training.utils.data_utils import BatchedVideoDatapoint
+from training_mose_png.utils.data_utils import BatchedVideoDatapoint
 
 
 class SAM2Train(SAM2Base):

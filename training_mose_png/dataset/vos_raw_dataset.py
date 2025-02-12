@@ -19,7 +19,7 @@ from iopath.common.file_io import g_pathmgr
 
 from omegaconf.listconfig import ListConfig
 
-from training.dataset.vos_segment_loader import (
+from training_mose_png.dataset.vos_segment_loader import (
     JSONSegmentLoader,
     MultiplePNGSegmentLoader,
     PalettisedPNGSegmentLoader,
